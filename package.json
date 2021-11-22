@@ -1,23 +1,15 @@
 {
   "name": "typescript-example",
-  "version": "1.0.1",
-  "main": "lib/index.js",
-  "types": "lib",
+  "version": "1.0.0",
+  "description": "generates a random quote from a database of quotes",
+  "main": "index.js",
   "scripts": {
-    "install": "tsc -p ."
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/TheCoderGuru/random-quote.git"
-  },
-  "keywords": [],
-  "author": "",
+  "author": "TheCoderGuru",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/TheCoderGuru/random-quote/issues"
-  },
-  "homepage": "https://github.com/TheCoderGuru/random-quote#readme",
-  "dependencies": {
+  "devDependencies": {
     "typescript": "^4.5.2"
   }
 }
