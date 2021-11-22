@@ -1,0 +1,23 @@
+{
+  "name": "typescript-example",
+  "version": "1.0.1",
+  "main": "lib/index.js",
+  "types": "lib",
+  "scripts": {
+    "install": "tsc -p ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheCoderGuru/random-quote.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TheCoderGuru/random-quote/issues"
+  },
+  "homepage": "https://github.com/TheCoderGuru/random-quote#readme",
+  "dependencies": {
+    "typescript": "^4.5.2"
+  }
+}
