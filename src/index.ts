@@ -1,5 +1,3 @@
-const testMethod = () => {
-	console.log("This is a test");
+export function add( a: number, b: number ){
+	return a + b;
 }
-
-testMethod();
