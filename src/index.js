@@ -1,6 +1,6 @@
 "use strict";
 exports.__esModule = true;
-exports.removeQuote = exports.getRandomQuote = exports.getQuote = void 0;
+exports.getRandomQuote = exports.getQuote = void 0;
 var quotes = [{ "quote": "Life isn’t about getting and having, it’s about giving and being.", "author": "Kevin Kruse" },
     { "quote": "Whatever the mind of man can conceive and believe, it can achieve.", "author": "Napoleon Hill" },
     { "quote": "Strive not to be a success, but rather to be of value.", "author": "Albert Einstein" },
@@ -103,17 +103,15 @@ var quotes = [{ "quote": "Life isn’t about getting and having, it’s about gi
     { "quote": "Nothing is impossible, the word itself says, “I’m possible!”", "author": "–Audrey Hepburn" },
     { "quote": "The only way to do great work is to love what you do.", "author": "Steve Jobs" },
     { "quote": "If you can dream it, you can achieve it.", "author": "Zig Ziglar" },
-    { "quote": "I'm unpredictable, I never know where I'm going until I get there, I'm so random, I'm always growing, learning, changing, I'm never the same person twice. But one thing you can be sure of about me; is I will always do exactly what I want to do.", "author": "C. JoyBell C." }];
-function getQuote(quote) {
+    { "quote": "I'm unpredictable, I never know where I'm going until I get there, I'm so random, I'm always growing, learning, changing, I'm never the same person twice. But one thing you can be sure of about me; is I will always do exactly what I want to do.", "author": "C. JoyBell C." },
+    { "quote": "A musician must make music, an artist must paint, a poet must write, if he is to be ultimately at peace with himself. What a man can be, he must be", "author": "Abraham Maslow" },
+    { "quote": "The lampshade on my head is for my bright ideas. I won't be able to convey them until Monday, when my curtain gets out of the dry cleaners.", "author": "Bauvard, Some inspiration for the Overenthusiastic" }];
+var getQuote = function (quote) {
     return (quotes[quote]["quote"] + ' ~ ' + quotes[quote]["author"]);
-}
+};
 exports.getQuote = getQuote;
-function getRandomQuote() {
+var getRandomQuote = function () {
     return (quotes[Math.floor(Math.random() * (quotes.length + 1))]["quote"] + ' ~ ' + quotes[Math.floor(Math.random() * (quotes.length + 1))]["author"]);
-}
+};
 exports.getRandomQuote = getRandomQuote;
-function removeQuote(quote_name) {
-    return quotes.pop(quote_name);
-}
-exports.removeQuote = removeQuote;
-removeQuote("I am so unpredictable");
+console.log((0, exports.getRandomQuote)());

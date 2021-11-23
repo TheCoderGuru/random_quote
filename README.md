@@ -1,6 +1,6 @@
-# random-quote
+# random_quote_ts
 
-generates a random quote from a database of quotes
+generates a random quote from a finite list of quotes.
 
 <br>
 <br>
@@ -8,25 +8,25 @@ generates a random quote from a database of quotes
 ### Installation
 
 ```bash
-npm install random-quote
-npx install random-quote
-sudo npm install random-quote
-npm install random-quote --save
+npm install random_quote_ts
+npx install random_quote_ts
+sudo npm install random_quote_ts
+npm install random_quote_ts --save
 ```
 <br>
 <br>
 
 ### Usage
 
-```js
-const { getQuote, setQuote, removeQuote } = require( 'random-quote' );
+```ts
 
-// Create an array called quotes that encompasses quotes of your choice
+import { getQuote, getRandomQuote } from 'random_quote_ts';
 
-var quotes = [];
+console.log( getQuote( <quote_number> ) );
 
-console.log( getQuote() );
+console.log( getRandomQuote( ) );
+
 ```
 
-**More functions will be added soon**
+**More quotes will be added soon.**
 

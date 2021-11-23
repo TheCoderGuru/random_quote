@@ -1,6 +1,6 @@
 {
   "name": "random_quote_ts",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "generates a random quote from a database of quotes",
   "main": "lib/index.js",
   "types": "lib",
