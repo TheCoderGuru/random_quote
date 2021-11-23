@@ -1,5 +1,5 @@
 {
-  "name": "typescript-example",
+  "name": "random_quote",
   "version": "1.0.0",
   "description": "generates a random quote from a database of quotes",
   "main": "lib/index.js",
@@ -13,13 +13,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TheCoderGuru/random-quote.git"
+    "url": "git+https://github.com/TheCoderGuru/random_quote.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/TheCoderGuru/random-quote/issues"
+    "url": "https://github.com/TheCoderGuru/random_quote/issues"
   },
-  "homepage": "https://github.com/TheCoderGuru/random-quote#readme"
+  "homepage": "https://github.com/TheCoderGuru/random_quote#readme"
 }
