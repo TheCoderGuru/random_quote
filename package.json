@@ -1,5 +1,5 @@
 {
-  "name": "random_quote",
+  "name": "@devshash/random_quote",
   "version": "1.0.0",
   "description": "generates a random quote from a database of quotes",
   "main": "lib/index.js",
