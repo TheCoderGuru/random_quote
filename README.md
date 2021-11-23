@@ -22,11 +22,22 @@ npm install random_quote_ts --save
 
 import { getQuote, getRandomQuote } from 'random_quote_ts';
 
-console.log( getQuote( <quote_number> ) );
+console.log( getQuote( ) );
 
 console.log( getRandomQuote( ) );
 
 ```
+
+```js
+
+const { getQuote, getRandomQuote } = require( 'random_quote_ts' );
+
+console.log( getQuote( ) );
+
+console.log( getRandomQuote( ) );
+
+```
+
 
 **More quotes will be added soon.**
 
