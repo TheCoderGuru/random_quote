@@ -113,3 +113,23 @@ export let getRandomQuote = () => {
 
 	return( quotes[ Math.floor( Math.random() * ( quotes.length + 1 ) ) ][ "quote" ] + ' ~ ' + quotes[ Math.floor( Math.random() * ( quotes.length + 1 ) ) ][ "author" ] );
 } 
+
+export let removeQuote = ( position: number) => {
+
+	quotes.splice( position, 1 )
+}
+
+export let addQuote = ( quote_name: string, quote_author: string ) => {
+
+	quotes.push({ "quote" : quote_name, "author" : quote_author })
+}
+
+console.log( quotes.length )
+
+addQuote( "Spending time with your crush tends to make you happier", "Anonymous" )
+
+console.log( getQuote(105) )
+
+removeQuote( 105 )
+
+console.log( getQuote(104) )

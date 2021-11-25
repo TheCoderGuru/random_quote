@@ -1,6 +1,6 @@
 "use strict";
 exports.__esModule = true;
-exports.getRandomQuote = exports.getQuote = void 0;
+exports.addQuote = exports.removeQuote = exports.getRandomQuote = exports.getQuote = void 0;
 var quotes = [{ "quote": "Life isn’t about getting and having, it’s about giving and being.", "author": "Kevin Kruse" },
     { "quote": "Whatever the mind of man can conceive and believe, it can achieve.", "author": "Napoleon Hill" },
     { "quote": "Strive not to be a success, but rather to be of value.", "author": "Albert Einstein" },
@@ -114,3 +114,16 @@ var getRandomQuote = function () {
     return (quotes[Math.floor(Math.random() * (quotes.length + 1))]["quote"] + ' ~ ' + quotes[Math.floor(Math.random() * (quotes.length + 1))]["author"]);
 };
 exports.getRandomQuote = getRandomQuote;
+var removeQuote = function (position) {
+    quotes.splice(position, 1);
+};
+exports.removeQuote = removeQuote;
+var addQuote = function (quote_name, quote_author) {
+    quotes.push({ "quote": quote_name, "author": quote_author });
+};
+exports.addQuote = addQuote;
+console.log(quotes.length);
+(0, exports.addQuote)("Spending time with your crush tends to make you happier", "Anonymous");
+console.log((0, exports.getQuote)(105));
+(0, exports.removeQuote)(105);
+console.log((0, exports.getQuote)(104));
