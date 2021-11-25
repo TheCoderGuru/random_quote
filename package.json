@@ -1,6 +1,6 @@
 {
   "name": "random_quote_ts",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "generates a random quote from a database of quotes",
   "main": "src/index.js",
   "types": "src",
@@ -15,7 +15,7 @@
     "type": "git",
     "url": "git+https://github.com/TheCoderGuru/random_quote.git"
   },
-  "keywords": [],
+  "keywords": ["random_quote_ts", "TypeScript", "typescript", "quote", "random", "devshash"],
   "author": "",
   "license": "ISC",
   "bugs": {
