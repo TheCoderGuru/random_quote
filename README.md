@@ -10,10 +10,9 @@ generates a random quote from a finite list of quotes.
 ### Usage
 
 <br>
-
-<i>Typescript</i>
-
 <br>
+
+<h4>Typescript</h4>
 
 ```ts
 
@@ -23,7 +22,13 @@ console.log( getQuote( ) );
 
 console.log( getRandomQuote( ) );
 
+console.log( addQuote( ) );
+
+console.log( removeQuote( ) );
+
 ```
+
+<h4>Javascript</h4>
 
 ```js
 
@@ -32,6 +37,10 @@ const { getQuote, getRandomQuote } = require( 'random_quote_ts' );
 console.log( getQuote( ) );
 
 console.log( getRandomQuote( ) );
+
+console.log( addQuote( ) );
+
+console.log( removeQuote( ) );
 
 ```
 

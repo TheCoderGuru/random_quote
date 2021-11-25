@@ -1,3 +1,5 @@
+const chalk = require('chalk');
+
 var quotes  = [{"quote": "Life isn’t about getting and having, it’s about giving and being.", "author": "Kevin Kruse"},
 {"quote": "Whatever the mind of man can conceive and believe, it can achieve.", "author": "Napoleon Hill"},
 {"quote": "Strive not to be a success, but rather to be of value.", "author": "Albert Einstein"},
@@ -106,6 +108,11 @@ var quotes  = [{"quote": "Life isn’t about getting and having, it’s about gi
 
 export let getQuote = ( quote: number ) : string => {
 
+	if( !quotes[quote] ){
+
+		console.log( chalk.red( `A quote with the specified index does not exist. Please specify a number between 0 and ${quotes.length - 1}` ) );
+	}
+
 	return( quotes[ quote ][ "quote" ] + ' ~ ' + quotes[ quote ][ "author" ] );
 }
  
@@ -114,22 +121,25 @@ export let getRandomQuote = () => {
 	return( quotes[ Math.floor( Math.random() * ( quotes.length + 1 ) ) ][ "quote" ] + ' ~ ' + quotes[ Math.floor( Math.random() * ( quotes.length + 1 ) ) ][ "author" ] );
 } 
 
-export let removeQuote = ( position: number) => {
+export let removeQuote = ( position: number ) => {
 
-	quotes.splice( position, 1 )
+	if( !quotes[position] ){
+
+		console.log( chalk.red( `The position ${position} does not exist. Please ensure it ranges between 0 and ${quotes.length - 1}` ) );
+	
+	} else {
+
+		quotes.splice( position, 1 )
+
+		console.log( chalk.blue( `Successfully removed quote at position ${position}. Their is now ${quotes.length} quotes` ) )
+	}
+
 }
 
 export let addQuote = ( quote_name: string, quote_author: string ) => {
 
-	quotes.push({ "quote" : quote_name, "author" : quote_author })
+	console.log( chalk.cyan( `Added quote ${quote_name} with author ${quote_author}`) )
+
+	return quotes.push({ "quote" : quote_name, "author" : quote_author })
 }
 
-console.log( quotes.length )
-
-addQuote( "Spending time with your crush tends to make you happier", "Anonymous" )
-
-console.log( getQuote(105) )
-
-removeQuote( 105 )
-
-console.log( getQuote(104) )

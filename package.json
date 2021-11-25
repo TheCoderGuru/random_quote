@@ -1,10 +1,11 @@
 {
   "name": "random_quote_ts",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "description": "generates a random quote from a database of quotes",
   "main": "src/index.js",
   "types": "src",
   "devDependencies": {
+    "@types/node": "^16.11.10",
     "typescript": "^4.5.2"
   },
   "scripts": {
@@ -15,11 +16,21 @@
     "type": "git",
     "url": "git+https://github.com/TheCoderGuru/random_quote.git"
   },
-  "keywords": ["random_quote_ts", "TypeScript", "typescript", "quote", "random", "devshash"],
+  "keywords": [
+    "random_quote_ts",
+    "TypeScript",
+    "typescript",
+    "quote",
+    "random",
+    "devshash"
+  ],
   "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/TheCoderGuru/random_quote/issues"
   },
-  "homepage": "https://github.com/TheCoderGuru/random_quote#readme"
+  "homepage": "https://github.com/TheCoderGuru/random_quote#readme",
+  "dependencies": {
+    "chalk": "^4.1.2"
+  }
 }
